@@ -1,0 +1,26 @@
+{
+  "name": "react-slowpoke",
+  "version": "1.0.0",
+  "description": "A costumizable React spinner to show while loading resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boudra/slowpoke.git"
+  },
+  "keywords": [
+    "react",
+    "spinner",
+    "loader",
+    "customizable",
+    "spin"
+  ],
+  "author": "Mohamed Boudra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boudra/slowpoke/issues"
+  },
+  "homepage": "https://github.com/boudra/slowpoke#readme"
+}
