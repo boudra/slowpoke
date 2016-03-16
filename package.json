@@ -2,9 +2,10 @@
   "name": "react-slowpoke",
   "version": "1.0.0",
   "description": "A costumizable React spinner to show while loading resources",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "build": "babel --presets react,es2015 index.js > main.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/boudra/slowpoke#readme",
   "devDependencies": {
+    "babel-cli": "^6.6.5",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
