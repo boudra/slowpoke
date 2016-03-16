@@ -32,7 +32,7 @@ const spinnerTypes = {
         },
         tick() {
             this.setState({
-                rotation: (this.state.rotation + this.props.speed) % 720
+                rotation: (this.state.rotation + this.props.speed) % 720,
                 frameRequest: window.requestAnimationFrame(this.tick)
             });
         },
