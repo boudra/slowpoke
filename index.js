@@ -33,8 +33,11 @@ const spinnerTypes = {
         tick() {
             this.setState({
                 rotation: (this.state.rotation + this.props.speed) % 720
+                frameRequest: window.requestAnimationFrame(this.tick)
             });
-            window.requestAnimationFrame(this.tick);
+        },
+        componentWillUnmount() {
+            window.cancelAnimationFrame(this.state.frameRequest);
         },
         render: function() {
             const circleStyle = (opacity, size, rotation, weight) => ({
