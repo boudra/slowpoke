@@ -11,7 +11,6 @@ const fullScreen = {
 
 const spinnerStyles = {
     roundSpinner: {
-        background: 'rgba(255,255,255,0.3)'
     }
 };
 
@@ -21,6 +20,7 @@ const spinnerTypes = {
             rotation: 0.0
         }),
         getDefaultProps: () => ({
+            show: false,
             speed: 4,
             size: 30,
             weight: 19,
@@ -81,8 +81,9 @@ const spinnerTypes = {
 
 const SlowPoke = props => {
     const spinnerName = `${props.type}Spinner`;
+    if(!props.show) return <div/>;
     return (
-        <div style={Object.assign({}, fullScreen,spinnerStyles[spinnerName])}>
+        <div style={Object.assign({}, fullScreen, spinnerStyles[spinnerName], props.style)}>
         {React.createElement(spinnerTypes[spinnerName], props.options || {})}
         </div>
     );
