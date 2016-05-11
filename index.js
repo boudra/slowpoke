@@ -54,8 +54,8 @@ const spinnerTypes = {
                 border: `${this.props.size * (this.props.weight/100)}px solid transparent`,
             });
             return (
-                <div>
-                    <div style={ Object.assign(circleStyle(
+                <div className="slowpoke-container">
+                    <div className="slowpoke" style={ Object.assign(circleStyle(
                         0.3, this.props.size, 0,
                         this.props.weight / 100
                     ), {
