@@ -54,8 +54,8 @@ const spinnerTypes = {
                 border: `${this.props.size * (this.props.weight/100)}px solid transparent`,
             });
             return (
-                <div className="slowpoke-container">
-                    <div className="slowpoke" style={ Object.assign(circleStyle(
+                <div className="slowpoke">
+                    <div style={ Object.assign(circleStyle(
                         0.3, this.props.size, 0,
                         this.props.weight / 100
                     ), {
@@ -83,7 +83,7 @@ const SlowPoke = props => {
     const spinnerName = `${props.type}Spinner`;
     if(!props.show) return <div/>;
     return (
-        <div style={Object.assign({}, fullScreen, spinnerStyles[spinnerName], props.style)}>
+        <div className="slowpoke-container" style={Object.assign({}, fullScreen, spinnerStyles[spinnerName], props.style)}>
         {React.createElement(spinnerTypes[spinnerName], props.options || {})}
         </div>
     );
