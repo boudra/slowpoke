@@ -84,7 +84,7 @@ const SlowPoke = props => {
     if(!props.show) return <div/>;
     return (
         <div className="slowpoke-container" style={Object.assign({}, fullScreen, spinnerStyles[spinnerName], props.style)}>
-        {React.createElement(spinnerTypes[spinnerName], props.options || {})}
+        {React.createElement(spinnerTypes[spinnerName], props || {})}
         </div>
     );
 };
