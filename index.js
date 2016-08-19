@@ -44,7 +44,7 @@ const spinnerTypes = {
                 width: size,
                 height: size,
                 marginLeft: -size * 0.5,
-                heightTop: -size * 0.5,
+                marginTop: -size * 0.5,
                 position: 'absolute',
                 top: '50%',
                 opacity: opacity,
