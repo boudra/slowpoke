@@ -1,7 +1,7 @@
 {
   "name": "react-slowpoke",
   "version": "1.2.0",
-  "description": "A costumizable React spinner to show while loading resources",
+  "description": "A minimal React spinner to show while loading resources",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
