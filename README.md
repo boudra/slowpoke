@@ -1,3 +1,7 @@
+[![npm version](https://badge.fury.io/js/react-slowpoke.svg)](https://badge.fury.io/js/react-slowpoke)
+
+------------------
+
 # Slowpoke
 
 Minimal spinner react component
