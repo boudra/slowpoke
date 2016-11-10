@@ -2,9 +2,7 @@
 
 Minimal spinner react component
 
-See a [live demo](https://cdn.rawgit.com/boudra/slowpoke/master/example/index.html)
-
-See an [example](https://github.com/boudra/slowpoke/tree/master/example)
+See a [live demo](https://cdn.rawgit.com/boudra/slowpoke/master/example/index.html) and it's [code here](https://github.com/boudra/slowpoke/tree/master/example)
 
 ## How to use?
 
