@@ -29,27 +29,29 @@ var fullScreen = {
 
 var spinnerTypes = {
   roundSpinner: React.createClass({
-    getInitialState: () => ({
-      rotation: 0.0
-    }),
-    getDefaultProps: () => ({
-      show: false,
-      speed: 4,
-      size: 30,
-      weight: 19,
-      foreground: 'rgba(0,0,0,0.7)',
-      background: 'rgba(0,0,0,0.2)'
-    }),
-    componentDidMount() {
+    getInitialState: function() {
+      return { rotation: 0.0 };
+    },
+    getDefaultProps: function() {
+      return {
+        show: false,
+        speed: 4,
+        size: 30,
+        weight: 19,
+        foreground: 'rgba(0,0,0,0.7)',
+        background: 'rgba(0,0,0,0.2)'
+      };
+    },
+    componentDidMount: function() {
       this.tick();
     },
-    tick() {
+    tick: function() {
       this.setState({
         rotation: (this.state.rotation + this.props.speed) % 720,
         frameRequest: window.requestAnimationFrame(this.tick)
       });
     },
-    componentWillUnmount() {
+    componentWillUnmount: function() {
       window.cancelAnimationFrame(this.state.frameRequest);
     },
     render: function() {
