@@ -56,7 +56,7 @@ var spinnerTypes = {
     },
     render: function() {
       return React.createElement("div", { className: "slowpoke" },
-        React.createElement( "div", {
+        React.createElement("div", {
             style: {
               width: this.props.size,
               height: this.props.size,
@@ -66,9 +66,9 @@ var spinnerTypes = {
               top: '50%',
               left: '50%',
               borderRadius: '100%',
-              transform: `rotateZ(${this.state.rotation}deg)`,
-              border: `${this.props.size * (this.props.weight/100)}px solid ${this.props.background}`,
-              borderRightColor: `${this.props.foreground}`
+              transform: "rotateZ(" + this.state.rotation + "deg)",
+              border: (this.props.size * (this.props.weight/100)) + "px solid " + this.props.background,
+              borderRightColor: this.props.foreground
             }
         })
       );
@@ -77,7 +77,7 @@ var spinnerTypes = {
 };
 
 function SlowPoke(props) {
-  var spinnerName = `${props.type}Spinner`;
+  var spinnerName = props.type + "Spinner";
   if(!props.show) return React.createElement("div");
   return React.createElement("div", {
     className: "slowpoke-container",
