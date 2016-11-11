@@ -76,7 +76,7 @@ var spinnerTypes = {
 
 function SlowPoke(props) {
   var spinnerName = `${props.type}Spinner`;
-  if(!props.show) return <div/>;
+  if(!props.show) return React.createElement("div");
   return React.createElement("div", {
     className: "slowpoke-container",
     style: Object.assign({}, fullScreen, props.style)
